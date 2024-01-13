@@ -50,7 +50,7 @@
 }
 
 #button:active {
-  animation: regnbue 3s ease-out;
+  animation: regnbue 3s infinite ease-in-out;
 }
 
 @keyframes regnbue {
