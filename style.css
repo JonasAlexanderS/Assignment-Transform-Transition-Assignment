@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#whole-thing {
+  position: relative;
+}
+
+#pics {
+  display: flex;
+  justify-content: center;
+}
+
+.Lucy {
+  max-width: 25vw;
+  padding: 5vh 0 0 0;
+  margin: 2vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+.Akira {
+  max-width: 25vw;
+  padding: 5vh 0 0 0;
+  margin: 2vh;
+  transition: transform 0.5s ease-in-out;
+}
+.Lucy:hover {
+  transform: scale(1.5);
+}
+
+.Akira:hover {
+  transform: scale(1.5);
+}
+
+#button {
+  display: flex;
+  margin: 5vw 0 0 40vw;
+  padding: 2em 2em;
+  border: none;
+  border-radius: 10%;
+  background-color: rgba(188, 75, 75, 0.8);
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+
+#button:hover {
+  transform: rotate(360deg);
+}
+
+#button:active {
+  animation: regnbue 5s ease-out;
+}
+
+@keyframes regnbue {
+  0% {
+    background-color: rgba(188, 75, 75, 0.8);
+  }
+  14.29% {
+    background-color: rgba(205, 127, 50, 0.8);
+  }
+  28.58% {
+    background-color: rgba(205, 205, 50, 0.8);
+  }
+  42.87% {
+    background-color: rgba(85, 187, 85, 0.8);
+  }
+  57.16% {
+    background-color: rgba(60, 120, 216, 0.8);
+  }
+  71.45% {
+    background-color: rgba(75, 60, 180, 0.8);
+  }
+  85.74% {
+    background-color: rgba(143, 61, 178, 0.8);
+  }
+  100% {
+    background-color: rgba(188, 75, 75, 0.8);
+  }
+}
