@@ -5,52 +5,52 @@
 }
 
 #whole-thing {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 #pics {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .Lucy {
-  max-width: 25vw;
-  padding: 5vh 0 0 0;
-  margin: 2vh;
+  max-width: 15vw;
+
+  margin: 5vh 0 0 0;
   transition: transform 0.5s ease-in-out;
 }
 
 .Akira {
-  max-width: 25vw;
-  padding: 5vh 0 0 0;
-  margin: 2vh;
+  max-width: 15vw;
+  margin: 5vh 0 0 0;
   transition: transform 0.5s ease-in-out;
 }
 .Lucy:hover {
-  transform: scale(1.5);
+  transform: scale(1.25);
 }
 
 .Akira:hover {
-  transform: scale(1.5);
+  transform: scale(1.25);
+}
+
+#button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #button {
-  display: flex;
-  margin: 5vw 0 0 40vw;
+  margin: 5vw 0 0 0;
   padding: 2em 2em;
   border: none;
   border-radius: 10%;
   background-color: rgba(188, 75, 75, 0.8);
   cursor: pointer;
-  transition: transform 1s ease-in-out;
-}
-
-#button:hover {
-  transform: rotate(360deg);
 }
 
 #button:active {
-  animation: regnbue 5s ease-out;
+  animation: regnbue 3s ease-out;
 }
 
 @keyframes regnbue {
